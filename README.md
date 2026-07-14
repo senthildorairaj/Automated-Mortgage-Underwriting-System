@@ -31,17 +31,19 @@ By exploring this project, you will be able to:
 The system utilizes a hierarchical multi-agent pattern:  
 
 Specialist Agents:
-    Credit Analyst Agent
-    Income Analyst Agent
-    Asset Analyst Agent
-    Collateral Analyst Agent
+  -  Credit Analyst Agent
+  -  Income Analyst Agent
+  -  Asset Analyst Agent
+  -  Collateral Analyst Agent
 
 Coordination Agents:
-    Supervisor Agent – orchestrates workflow
-    Critic Agent – evaluates agent outputs
-    Decision Agent – final underwriting decision
+  -  Supervisor Agent – orchestrates workflow
+  -  Critic Agent – evaluates agent outputs
+  -  Decision Agent – final underwriting decision
 
-    A LangGraph state machine coordinates agent interactions, ensuring deterministic and auditable execution.
+A LangGraph state machine coordinates agent interactions, ensuring deterministic and auditable execution.
+    (https://raw.githubusercontent.com/your-repo/your-project/main/images/P3_mermaid.png)
+
 
 ## Technology Stack
 
