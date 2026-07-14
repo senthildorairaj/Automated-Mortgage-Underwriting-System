@@ -42,7 +42,7 @@ Coordination Agents:
   -  Decision Agent – final underwriting decision
 
 A LangGraph state machine coordinates agent interactions, ensuring deterministic and auditable execution.
-    (https://raw.githubusercontent.com/your-repo/your-project/main/images/P3_mermaid.png)
+    (https://github.com/senthildorairaj/Senior-Mortgage-Underwriting-System/blob/main/System%20Architecture.png)
 
 
 ## Technology Stack
