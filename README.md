@@ -1,10 +1,9 @@
 # Senior-Mortgage-Underwriting-System
-Comprehensive agentic AI system for mortgage underwriting that automates credit analysis, income verification, asset assessment, and collateral evaluation while maintaining compliance with Fair Lending regulations and implementing human oversight for high-risk decisions.
-# Senior Mortgage Underwriting System
+An Agentic AI Multi‑Agent Workflow for Automated Mortgage Underwriting
 
 ## Project Overview
 
-This project implements an **Agentic AI Multi-Agent Workflow** for a Senior Mortgage Underwriting System. It demonstrates how to build an intelligent loan analysis system using LangGraph and AI agents to automate and streamline the mortgage underwriting process.
+The Senior Mortgage Underwriting System is an Agentic AI–powered multi‑agent workflow designed to automate and enhance the mortgage underwriting process. Built using LangGraph, LangChain, and OpenAI GPT‑4o‑mini, this system demonstrates how intelligent agents can collaborate to evaluate loan applications with consistency, transparency, and regulatory compliance.
 
 Traditional mortgage underwriting is often time-consuming, document-heavy, inconsistent, and expensive. This AI-powered system addresses these challenges by:
 
@@ -13,6 +12,8 @@ Traditional mortgage underwriting is often time-consuming, document-heavy, incon
 - Providing an **audit trail** with clear reasoning chains.
 - Ensuring **regulatory compliance** (e.g., Fair Lending Act).
 - Scaling to handle **thousands of applications** simultaneously.
+
+This project is ideal for learners exploring agentic AI, workflow orchestration, RAG, compliance engineering, and real-world deployment patterns.
 
 ## Learning Objectives
 
@@ -27,8 +28,20 @@ By exploring this project, you will be able to:
 
 ## System Architecture
 
-The system utilizes a hierarchical multi-agent pattern with Specialist Agents (Credit, Income, Asset, Collateral Analysts) and Coordination Agents (Supervisor, Critic, Decision Agents). 
+The system utilizes a hierarchical multi-agent pattern:  
 
+Specialist Agents:
+    Credit Analyst Agent
+    Income Analyst Agent
+    Asset Analyst Agent
+    Collateral Analyst Agent
+
+Coordination Agents:
+    Supervisor Agent – orchestrates workflow
+    Critic Agent – evaluates agent outputs
+    Decision Agent – final underwriting decision
+
+    A LangGraph state machine coordinates agent interactions, ensuring deterministic and auditable execution.
 
 ## Technology Stack
 
@@ -37,14 +50,16 @@ The system utilizes a hierarchical multi-agent pattern with Specialist Agents (C
 - **OpenAI - GPT-4o-mini**: Language model for reasoning
 - **ChromaDB**: Vector store for policy retrieval
 - **Python**: Programming language
+- **Jupyter / Colab**:  Interactive development
 
 ## Setup and Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-repo/your-project.git
-    cd your-project
+    git clone https://github.com/senthildorairaj/Senior-Mortgage-Underwriting-System.git
+    cd Senior-Mortgage-Underwriting-System
     ```
+    
 
 2.  **Install dependencies:**
     ```bash
@@ -81,9 +96,9 @@ This project is best explored in a Jupyter Notebook or Google Colab environment.
 
 To run the notebook:
 
-1.  Open `mortgage_underwriting_system.ipynb` in your preferred environment.
+1.  Open the .ipynb file in Jupyter or Colab
 2.  Execute cells sequentially to follow the multi-agent workflow development.
-
+3.  Observe agent interactions and underwriting decisions.
 
 
 ### Part 1: Core Agent Implementation
@@ -105,7 +120,7 @@ To run the notebook:
 - Run all test cases
 
 ### Part 4: Summary and Future Scope
-- Summary / Your Observations about this Project
+- Summary/Observations about this Project
 - Future scope of this Project 
 
 ## Future Scope
@@ -113,6 +128,7 @@ To run the notebook:
 - Expand into full AUS capabilities with additional agents and rule engines.
 - Integrate real-time data sources and external APIs (e.g., credit bureaus, bank statements).
 - Build a full UI dashboard and case management system for operational visibility.
+- Add monitoring, logging, and model evaluation pipelines.
 
 ## Contributing
 
