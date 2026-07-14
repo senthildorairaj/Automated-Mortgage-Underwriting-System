@@ -103,7 +103,7 @@ To run the notebook:
 3.  Observe agent interactions and underwriting decisions.
 
 
-Explanation of the different modules (in case if you need more details)
+### Explanation of the different modules (in case if you need more details):
 ### Part 1: Core Agent Implementation
 - Utility tools for calculations 
 - PII sanitization system 
